@@ -1,0 +1,116 @@
+$color1:#FFFFFF;
+$color2:#303030;
+$color3:#424242;
+$fontSize1:20px;
+$fontSize2:13px;
+$left:-250px;
+.nav {
+  color: $color1;
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  background-color: $color2;
+  left: $left;
+  .navTop{
+    margin: 4% auto 15%;
+    padding-left: 5%;
+    font-size: $fontSize1;
+    a{
+      color: $color1;
+      text-decoration: none;
+    }
+    a:hover{
+      cursor:pointer
+    }
+    img{
+      vertical-align: middle;
+      margin-right: 5%;
+    }
+    span{
+      vertical-align: middle;
+    }
+  }
+  ul{
+    padding: 0;
+    list-style: none;
+    font-size: $fontSize2;
+    li{
+      padding-left: 5%;
+      line-height: 48px;
+    }
+    li:hover{
+      background-color: $color3;
+      cursor:pointer
+    }
+    img{
+      vertical-align: middle;
+      margin-right: 5%;
+    }
+    span{
+      vertical-align: middle;
+    }
+  }
+}
+
+.show{
+  animation:right 0.3s forwards;
+  -moz-animation:right 0.3s forwards; /* Firefox */
+  -webkit-animation:right 0.3s forwards; /* Safari and Chrome */
+  -o-animation:right 0.3s forwards; /* Opera */
+}
+
+
+.hide{
+  animation:left 0.3s forwards;
+  -moz-animation:left 0.3s forwards; /* Firefox */
+  -webkit-animation:left 0.3s forwards; /* Safari and Chrome */
+  -o-animation:left 0.3s forwards; /* Opera */
+}
+
+@keyframes right
+{
+  from {left:-250px;}
+  to {left:0;}
+}
+
+@-moz-keyframes right /* Firefox */
+{
+  from {left:-250px;}
+  to {left:0;}
+}
+
+@-webkit-keyframes right /* Safari and Chrome */
+{
+  from {left:-250px;}
+  to {left:0;}
+}
+
+@-o-keyframes right /* Opera */
+{
+  from {left:-250px;}
+  to {left:0;}
+}
+
+@keyframes left
+{
+  from {left:0;}
+  to {left:-250px;}
+}
+
+@-moz-keyframes left /* Firefox */
+{
+  from {left:0;}
+  to {left:-250px;}
+}
+
+@-webkit-keyframes left /* Safari and Chrome */
+{
+  from {left:0;}
+  to {left:-250px;}
+}
+
+@-o-keyframes left /* Opera */
+{
+  from {left:0;}
+  to {left:-250px;}
+}
